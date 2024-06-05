@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian Portfolio</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/skins/color-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Inspiration&family=Philosopher:ital,wght@1,700&family=Poppins:wght@200;300;400;500&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/skins/style-switcher.css">
+    <style>
+        /* Additional CSS styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .portfolio-item {
+            flex: 0 0 33.33%;
+            max-width: 33.33%;
+            padding: 15px;
+        }
+
+        .portfolio-item-inner {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .portfolio-item-inner:hover {
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .portfolio-img img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-img img:hover {
+            transform: scale(1.05);
+        }
+
+        .portfolio-heading h4 {
+            margin-bottom: 10px;
+            font-size: 50px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .portfolio-heading h6 {
+            color: var(--skin-color);
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="main-content">
+            <!-- Portfolio Section -->
+            <section class="portfolio section">
+                <div class="container">
+                    <div class="section-title padd-15">
+                        <h2>Portfolio</h2>
+                    </div>
+                    <div class="portfolio-heading padd-15">
+                        <h4>Check Out My Latest Projects</h4>
+                        <h6>Click on the images to view the projects</h6>
+                    </div>
+                    <div class="row">
+                        <!-- Portfolio Item 1 -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <a href="https://neighborfind.herokuapp.com/"><img src="images/nei.png" alt="Project 1"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio Item 2 -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <a href="https://ratesmm.herokuapp.com/"><img src="images/insta.png" alt="Project 2"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio Item 3 -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <a href="https://.herokuapp.com/"><img src="images/epi.png" alt="Project 3"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more portfolio items as needed -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
